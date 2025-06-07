@@ -3,7 +3,7 @@
 ![Sample 1](assets/sample1.jpg)
 ![Sample 2](assets/sample2.jpg)
 
-GuidedFace is a modified version of Stable Diffusion to generate realistic face images based on specific input facial landmarks and text prompts. The model uses ControlNet, a neural network architecture that allows for precise control over the generated output by conditioning it on user-defined input conditioning image and prompts. This enables the generation of highly customized and coherent face images, where the shape, expression, and features of the face are guided by the input conditioning image as shown in the above figures.
+GuidedFace is a modified version of Stable Diffusion to generate realistic face images based on specific input facial landmarks and text prompts. The model uses [ControlNet](https://github.com/lllyasviel/ControlNet/tree/main), a neural network architecture that allows for precise control over the generated output by conditioning it on user-defined input conditioning image and prompts. This enables the generation of highly customized and coherent face images, where the shape, expression, and features of the face are guided by the input conditioning image as shown in the above figures.
 
 
 ## Setup
@@ -36,7 +36,7 @@ Run the below command to ensure that the dataset has been saved:
 
 ## Training
 
-The training of GuidedFace was performed using an A500 GPU and takes approximately 12 hours in total. We have made the trained model available on our HuggingFace repository, so you can skip the training step if you prefer. However, if you'd like to train the model from scratch, you can use the commands below. For more details on training, please refer to the training tutorial in ControlNet repository.
+The training of GuidedFace was performed using an A500 GPU and takes approximately 12 hours in total. We have made the trained model available on our HuggingFace repository, so you can skip the training step if you prefer. However, if you'd like to train the model from scratch, you can use the commands below. For more details on training, please refer to the [training tutorial in ControlNet repository](https://github.com/lllyasviel/ControlNet/blob/main/docs/train.md).
 
 ```
 cd ./models
