@@ -5,6 +5,9 @@
 
 GuidedFace is a modified version of Stable Diffusion to generate realistic face images based on specific input facial landmarks and text prompts. The model uses [ControlNet](https://github.com/lllyasviel/ControlNet/tree/main), a neural network architecture that allows for precise control over the generated output by conditioning it on user-defined input conditioning image and prompts. This enables the generation of highly customized and coherent face images, where the shape, expression, and features of the face are guided by the input conditioning image as shown in the above figures.
 
+The traning dataset and the trained models have been made available in our HuggingFace repository linked below:
+ - Trained Model : [https://huggingface.co/gokulg02/GuidedFace](https://huggingface.co/gokulg02/GuidedFace)
+ - Dataset : [https://huggingface.co/datasets/gokulg02/GuidedFace_dataset](https://huggingface.co/datasets/gokulg02/GuidedFace_dataset)
 
 ## Setup
 The required libraries can be setup by following the instruction given in the [ControlNet repo](https://github.com/lllyasviel/ControlNet/tree/main). Then, use the below commands to install additional libraries:
@@ -67,4 +70,4 @@ The [Inference.ipynb notebook](https://github.com/gokulg02/GuidedFace/blob/main/
 ```
  python inference_generate_samples.py
 ```
-Finally, to compute the [compute_inference_metrics.ipynb notebook](https://github.com/gokulg02/GuidedFace/blob/main/compute_inference_metrics.ipynb) can be used to compute the FID, inception score and similarity score. 
+Finally, the [compute_inference_metrics.ipynb notebook](https://github.com/gokulg02/GuidedFace/blob/main/compute_inference_metrics.ipynb) can be used to compute the FID, inception score and similarity score. 
