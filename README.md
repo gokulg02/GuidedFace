@@ -42,13 +42,11 @@ Run the below command to ensure that the dataset has been saved:
 The training of GuidedFace was performed using an A500 GPU and takes approximately 12 hours in total. We have made the trained model available on our HuggingFace repository, so you can skip the training step if you prefer. However, if you'd like to train the model from scratch, you can use the commands below. For more details on training, please refer to the [training tutorial in ControlNet repository](https://github.com/lllyasviel/ControlNet/blob/main/docs/train.md).
 
 ```
-cd ./models
-wget https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/v1-5-pruned.ckpt
+wget -P ./models https://huggingface.co/stable-diffusion-v1-5/stable-diffusion-v1-5/resolve/main/v1-5-pruned.ckpt
 
-cd ..
 python tool_add_control.py ./models/v1-5-pruned.ckpt ./models/control_sd15_ini.ckpt
 
-python ./tutorial_train.py 
+python tutorial_train.py 
 ```
 
 Use the below command to download the pre-trained model from our HuggingFace repo directly.
